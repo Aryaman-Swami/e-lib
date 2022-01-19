@@ -123,10 +123,11 @@ hr{
 
 .bookname{
     font-size: 2em;
+    font-weight: bolder;
 }
 
 .authorname{
-    font-size: 1em;
+    font-size: 1.5em;
 }
 .lang{
     text-transform: uppercase;
