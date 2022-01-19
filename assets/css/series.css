@@ -1,0 +1,219 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    
+@media screen and (min-width: 700px) {
+    body{
+        font-size: 70%;
+        max-height: fit-content;
+    }
+}
+
+@media screen and (max-width: 800px) {}
+
+/* main content style */
+body {
+    background-image: url(assets/img/shelf_1.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    /*scroll-behavior: auto;*/
+    height: 1900px;
+    width: cover;
+    word-wrap: break-word;
+}
+
+.series{
+    position: absolute;
+    top: 39vw; 
+    display: inline-block;
+    padding-left: 10vw;
+    transform: translate(-20%, -25%) ;        
+    font-family: 'Rye', cursive;
+    font-size: 7vw;
+    overflow: hidden;
+}
+
+.hanging, .hanging_2{
+    padding-top: 90vw;
+    transform: scale(0.7);
+    overflow:visible;
+    margin-left: -15%;
+}
+
+.hanging img{
+    width: 60%;
+    position: relative;
+    object-fit: contain;
+    float:left;
+    /* object-position:left; */
+    height: auto;
+}
+
+.hanging_2 img{
+    width: 60%;
+    position: relative;
+    object-fit: contain;
+    float:left;
+    /* object-position:left; */
+    height: auto;    }
+
+.hanging_2{
+    padding-top: 0%;
+}
+.book_name{
+    color: rgb(28, 3, 28);
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    font-size: 6vw;
+    transform: translate(55%, 360%);
+    text-align: center;
+}
+
+.book_name_1{
+    color: rgb(28, 3, 28);
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    font-size: 6vw;
+    transform: translate(25%, 700%);
+    text-align: center;
+}
+
+.mySlides img,
+.mySlides2 img{
+    position: relative;
+    width: 40vw;
+    height: 50vw;
+    background: transparent;
+    transition: transform .8s;
+    box-shadow: 5px 5px 20px 20px  rgb(0, 0, 0);
+    -moz-box-shadow: 5px 5px 20px 20px   rgb(0, 0, 0);
+    -webkit-box-shadow: 5px 5px 20px 20px  rgb(0, 0, 0);
+    -khtml-box-shadow: 5px 5px 20px 20px   rgb(0, 0, 0);
+    max-width: 100%;
+
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: fit-content;
+    position: relative;
+    /* padding-top: 10%; */
+    margin-top: -20%;
+    float: right;
+    margin-right: 10%;
+    transform: scale(0.5) translateY(-165%) translateX(30%);
+}
+
+.slideshow-container_1 {
+    max-width: fit-content;
+    position: relative;
+    /* padding-top: 10%; */
+    margin-top: -44%;
+    float: right;
+    margin-right: 10%;
+    transform: scale(0.5) translateY(-165%) translateX(10%);}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    }
+
+.mySlides2{
+    display: none;
+    }
+
+/* Next & previous buttons */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    box-sizing: border-box;
+    margin-top: -22px;
+    padding: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 7vw;
+    transition: 0.6s ease;
+    user-select: none;
+    }
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border: 20px  20px 20px 20px;
+    }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+.button{
+    font-size: 2vw;
+    /* display: inline-block; */
+    color: black;
+    position: absolute;
+    margin-left: 35vw;
+    display: inline-block;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button1{
+    font-size: 2vw;
+    /* display: inline-block; */
+    color: black;
+    position: absolute;
+    margin-left: 32vw;
+    margin-top: 60vw;
+    display: inline-block;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* next and prev buttons for 2nd slideshow */
+/* Next & previous buttons */
+.prev2, .next2{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 2vw;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 7vw;
+    transition: 0.6s ease;
+    /* border-radius: 0 3px 3px 0; */
+    user-select: none;
+    }
+
+/* Position the "next button" to the right */
+.next2 {
+    right: 0;
+    border-radius: 9px 9px 9px 9px;
+    }
+
+.prev2:hover, .next2:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+/* .active, .dot:hover {
+background-color: #717171;
+} */
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+  @keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
