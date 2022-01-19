@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
 body {
-    background-image:url(wood_background.jpeg);
+    background-image:url(assets/img/wood_background.jpeg);
     background-repeat: repeat;
     background-size: cover;
     /*scroll-behavior: auto;
