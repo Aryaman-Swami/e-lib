@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+
+/* =================header================= */
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+  background-image: url("../img/871025.png");
+  background-size: 100% 100%;
+
+  text-align: center;
+  align-items: center !important;
+  vertical-align: middle;
+}
+.head-texth1 {
+  font-family: "Montserrat", sans-serif;
+  color: #e38626;
+  font-size: 10rem;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.head-text {
+  font-family: "Henny Penny", cursive;
+  color: #fff;
+
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 5em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1.5rem;
+}
+
+.candle-1 {
+  height: 140px;
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}
+
+.candle-2 {
+  height: 140px;
+  position: absolute;
+  top: 30px;
+  right: 150px;
+}
+.candle-3 {
+  height: 140px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+}
+.candle-4 {
+  height: 140px;
+  position: absolute;
+  top: 80px;
+  left: 45%;
+}
+.candle-5 {
+  height: 140px;
+  position: absolute;
+  top: 10px;
+  left: 30%;
+}
+.candle-6 {
+  height: 140px;
+  position: absolute;
+  top: 60px;
+  right: 30%;
+}
+.candle-7 {
+  height: 140px;
+  position: absolute;
+  top: 30px;
+  right: 25%;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.floating2 {
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.floating3 {
+  animation-name: floating;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+.circle {
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  overflow: hidden;
+  margin: auto;
+  animation: circle 6s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-165px) rotate(-360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .circle {
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  overflow: hidden;
+  margin: auto;
+  animation: circle 6s linear infinite;
+}
+  .header {
+    background-size: cover;
+    font-size: 6.5px !important;
+  }
+  .about-fiction {
+    flex-direction: row-reverse !important;
+  }
+  .about-content {
+    width: 100% !important;
+    color: #fff;
+    text-align: center;
+  }
+  .about-content h1,
+  .about-content p {
+    color: #fff !important;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/* ==============about============= */
+
+.about-fiction {
+  padding: 5rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #fcf2e8;
+  background-image: url("../img/wave-haikei (1).svg");
+  background-size: cover;
+}
+
+.about-img {
+  width: 700px;
+  height: 500px;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-content {
+  width: 40%;
+  color: #fff;
+  text-align: center;
+}
+.about-content h1 {
+  font-size: 6rem;
+  margin: 20px;
+  color: #e38626;
+}
+
+.about-content p {
+  font-size: 2rem;
+  color: #e38626;
+}
+
+/* =====================main==================== */
+
+.main-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 30px;
+  text-align: right;
+  font-size: 15px;
+  color: #000;
+  font-family: "Henny Penny", cursive;
+}
+
+.container {
+  position: relative;
+  margin: 5rem;
+  background-color: #fcf2e8;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+.owl {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  height: 250px;
+  z-index: 5;
+}
+
+.fiction-img {
+  height: 190px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  margin: 4rem;
+
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.books {
+  width: 350px;
+  height: 250px;
+
+  margin: 3rem;
+
+  padding: 2.5rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-card {
+  width: 50%;
+  box-shadow: 2px 16px 17px -1px rgba(38, 37, 37, 0.55);
+
+  border-radius: 30px !important;
+}
+
+.right-card {
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  background: transparent;
+  width: 50%;
+}
+
+.books img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.books-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.books-info h3 {
+  margin-top: 0;
+}
+
+.books-info span {
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.books-info span.green {
+  color: lightgreen;
+}
+
+.books-info span.orange {
+  color: orange;
+}
+
+.books-info span.red {
+  color: red;
+}
+
+.overview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding: 1rem;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.books:hover .overview {
+  transform: translateY(0);
+}
+
+.pagination {
+  display: flex;
+  margin: 10px 30px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(248, 112, 0);
+}
+
+.page {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.page.disabled {
+  cursor: not-allowed;
+  color: grey;
+}
+
+.current {
+  padding: 10px 20px;
+  border-radius: 50%;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn {
+  border: 1px solid #333;
+  font-family: arial;
+  font-size: 12px;
+  margin: 12px;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  position: relative !important;
+  transition: all 0.5s ease 0s;
+  /* flat ui colors */
+}
+
+.btn::after {
+  content: "";
+  background-color: #f85846 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  transition: all 0.5s ease 0s;
+}
+
+.btn:hover {
+  color: #fff;
+}
+.btn:hover:after {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 768px) {
+  .owl {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    height: 150px;
+    z-index: 5;
+  }
+
+  main {
+  margin: 15rem 0 0 0 !important;
+
+ padding: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.books {
+  width: 350px;
+  height: 250px;
+
+  margin: 3rem 0 0 0 !important;
+
+  padding: 0 !important;
+ 
+}
+}
