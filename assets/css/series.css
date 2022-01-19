@@ -1,7 +1,8 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-    
+    @import 'animate.css';
+
 @media screen and (min-width: 700px) {
     body{
         font-size: 70%;
@@ -24,22 +25,77 @@ body {
 
 .series{
     position: absolute;
-    top: 39vw; 
+    top: 3vw; 
     display: inline-block;
-    padding-left: 10vw;
-    transform: translate(-20%, -25%) ;        
+    margin-left: 10vw;
     font-family: 'Rye', cursive;
     font-size: 7vw;
     overflow: hidden;
+    text-shadow: 1px 1px 10px #797979, 1px 1px 15px rgb(247, 248, 184);
+    color: black;
+    animation: 1s ease-in 1s 1 slideInRight;
+    animation-fill-mode: forwards;
 }
 
-.hanging, .hanging_2{
-    padding-top: 90vw;
+
+.hanging{
+    padding-top: 45vw;
     transform: scale(0.7);
     overflow:visible;
     margin-left: -15%;
 }
 
+@keyframes animate_swing{
+}
+
+.animate__animated.animate_swing{
+    --animate-duration: 2s;
+    transform: scale(0.1);
+}
+@keyframes slideInRight {
+    0% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateX(20vw);
+    }
+}
+.hanging:hover img,
+.hanging_2:hover img{
+    animation-name: swing;
+    animation-duration: 2s; 
+    animation-delay: 20ms;
+}
+
+/* @keyframes swinging {
+    0% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  } */
+  
+/*   
+  .hanging:hover,
+  .hanging_2:hover {
+    -webkit-transform-origin: 50% 0;
+    /* for Safari and older Chrome */
+    /* transform-origin: 50% 0;
+    -webkit-animation: swinging 2s ease-in-out forwards infinite;
+    animation: swinging 2s ease-in-out forwards infinite;
+  } */ 
+
+
+.hanging_2{
+    margin-top: 30%;
+    transform: scale(0.7);
+    overflow:visible;
+    margin-left: -15%;
+}
 .hanging img{
     width: 60%;
     position: relative;
@@ -74,7 +130,7 @@ body {
     position: absolute;
     font-family: 'Great Vibes', cursive;
     font-size: 6vw;
-    transform: translate(25%, 700%);
+    transform: translate(25%, 450%);
     text-align: center;
 }
 
@@ -99,7 +155,7 @@ body {
     max-width: fit-content;
     position: relative;
     /* padding-top: 10%; */
-    margin-top: -20%;
+    margin-top: -30%;
     float: right;
     margin-right: 10%;
     transform: scale(0.5) translateY(-165%) translateX(30%);
@@ -109,7 +165,7 @@ body {
     max-width: fit-content;
     position: relative;
     /* padding-top: 10%; */
-    margin-top: -44%;
+    margin-top: -33%;
     float: right;
     margin-right: 10%;
     transform: scale(0.5) translateY(-165%) translateX(10%);}
@@ -165,7 +221,7 @@ body {
     color: black;
     position: absolute;
     margin-left: 32vw;
-    margin-top: 60vw;
+    margin-top: 33vw;
     display: inline-block;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
