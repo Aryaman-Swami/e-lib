@@ -25,7 +25,7 @@ body {
 
 .series{
     position: absolute;
-    top: 3vw; 
+    top: 14vw; 
     display: inline-block;
     margin-left: 10vw;
     font-family: 'Rye', cursive;
@@ -35,11 +35,12 @@ body {
     color: black;
     animation: 1s ease-in 1s 1 slideInRight;
     animation-fill-mode: forwards;
+    z-index: -5;
 }
 
 
 .hanging{
-    padding-top: 45vw;
+    padding-top: 30vw;
     transform: scale(0.7);
     overflow:visible;
     margin-left: -15%;
@@ -57,7 +58,7 @@ body {
       transform: translateX(0vw);
     }
     100% {
-      transform: translateX(20vw);
+      transform: translateX(100%);
     }
 }
 .hanging:hover img,
@@ -91,7 +92,7 @@ body {
 
 
 .hanging_2{
-    margin-top: 30%;
+    margin-top: 40%;
     transform: scale(0.7);
     overflow:visible;
     margin-left: -15%;
@@ -110,6 +111,8 @@ body {
     position: relative;
     object-fit: contain;
     float:left;
+    padding-top: 4vw;
+
     /* object-position:left; */
     height: auto;    }
 
@@ -148,6 +151,8 @@ body {
     max-width: 100%;
 
 }
+
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -155,7 +160,7 @@ body {
     max-width: fit-content;
     position: relative;
     /* padding-top: 10%; */
-    margin-top: -30%;
+    margin-top: -25%;
     float: right;
     margin-right: 10%;
     transform: scale(0.5) translateY(-165%) translateX(30%);

@@ -15,11 +15,53 @@
   />
     <link rel="stylesheet" href="assets/css/series.css">
     <link rel="stylesheet" href="assets/css/book.css">
+    <link rel="stylesheet" href="assets/css/navbar_series.css">
 
 </head>
 
 <body>
     
+    <!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i>Joint Elibrary</a>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+          
+             <div class="dropdown">
+  <button class="dropbtn">Featured</button>
+  <div class="dropdown-content">
+   <a href="fiction.html" onclick="fiction()">Fiction</a>
+<a href="non-fiction.html" onclick="nonfiction()">Non Fiction</a>
+<a href="drama.html" onclick="drama()">drama</a>
+<a href="comic.html" onclick="comic()">comic</a>
+  </div>
+</div> 
+            <a href="contactus.html">Contact us</a>
+            <a href="aboutus.html">About us</a>
+            <a href="series.html">Series</a>
+        </nav>
+    </div>
+<script src="assets/js/series_navbar.js"></script>
+</header>
+
+
+
+<!-- header section ends -->
+
     <div class="series"> <p>
         SERIES
     </p>
