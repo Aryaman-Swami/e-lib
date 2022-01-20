@@ -691,6 +691,7 @@ section{
       background: #fff;
       padding: 2rem;
       border-radius: .5rem;
+      justify-content: center;
       box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
       display: flex;
   }
