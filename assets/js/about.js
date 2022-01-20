@@ -30,9 +30,9 @@ const setupbookInfo = (data) => {
         : "Not Rated";
 
     title.innerHTML = bookName.innerHTML = data.volumeInfo.title;
-    genres.innerHTML = `${data.volumeInfo.categories.map((item) => {
+    data.volumeInfo.categories ?( genres.innerHTML = `${data.volumeInfo.categories.map((item) => {
         return item + ",";
-    })} `;
+    })} `):"";
     lang.innerHTML = data.volumeInfo.language;
     publisher.innerHTML = data.volumeInfo.publisher;
     pdate.innerHTML = data.volumeInfo.publishedDate;
@@ -52,7 +52,7 @@ const setupbookInfo = (data) => {
     })} `;
 
     console.log(data.volumeInfo.categories[0]);
-    fetch(`${bookdetailid}?q=${data.volumeInfo.categories[0]}&maxResults=3&key=${API_KEY}`)
+    fetch(`${bookdetailid}?q=${data.volumeInfo.categories ? data.volumeInfo.categories[0] : data.volumeInfo.title}&maxResults=3&key=${API_KEY}`)
         .then((res) => res.json())
         .then((data) => {
             recommendbooks(data);
