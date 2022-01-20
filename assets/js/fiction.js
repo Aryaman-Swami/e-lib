@@ -6,14 +6,14 @@ const form = document.getElementById("form");
 const API_URL = `https://www.googleapis.com/books/v1/volumes?&maxResults=15&key=${API_KEY}&startIndex=0`
 const fiction_URL = `https://www.googleapis.com/books/v1/volumes?q=fiction&maxResults=15&key=${API_KEY}&startIndex=0`
 const books = document.getElementById("books");
-const search = document.getElementById("search");
+const search = document.getElementById("search-box");
 
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const current = document.getElementById("current");
 // https://www.googleapis.com/books/v1/volumes?q=fiction&key=${API_KEY}
 
-var startIndex;
+var startIndex=0;
 var maxResults = 15 ;
 var currentPage =1;
 var totalPages ;
@@ -62,9 +62,33 @@ function getFiction(url) {
 
 
 
+
+
 function showBooks(data) {
 
     main.innerHTML = "";
+    data.forEach(books => {
+        const {volumeInfo,imageLinks} = books;
+        const booksel = document.createElement('div');
+        booksel.classList.add('books');
+         booksel.innerHTML = 
+        
+        `
+        <div class="left-card"><img src=${volumeInfo.imageLinks ? volumeInfo.imageLinks.thumbnail : "assets/img/cover.jpg"}></div>
+        <div class="right-card">${volumeInfo.title.slice(0,30)} <br/><h5>Rating: ${volumeInfo.averageRating ? volumeInfo.averageRating+"/5" : 'Not Rated'}</h5>  <a href ='card.html?id=${books.id}' dataset-id=${books.id} class="btn">View More</a>  </div>
+         
+       
+      `
+
+        main.appendChild(booksel);
+    });
+
+
+}
+
+
+function rating(){
+ main.innerHTML = "";
     data.forEach(books => {
         const {volumeInfo,imageLinks} = books;
         const booksel = document.createElement('div');
@@ -81,7 +105,6 @@ function showBooks(data) {
         main.appendChild(booksel);
     });
 
-
 }
 
 
@@ -96,7 +119,7 @@ form.addEventListener('submit', (e) => {
         currentPage=1;
          current.innerText = 1;
         startIndex=0;
-        getFiction(searchURL + searchTerm  + '&key=AIzaSyABCMotJsaZVpPDKaB03v72YRoWAkmiuvo&searchIndex=0');
+        getFiction(searchURL + searchTerm  + '&key=AIzaSyABCMotJsaZVpPDKaB03v72YRoWAkmiuvo&startIndex=0');
     }
 })
 
@@ -126,15 +149,29 @@ prev.addEventListener('click', () => {
 function pageCall(page) {
     let urlSplit = lastUrl.split('?');
     let queryParams = urlSplit[1].split('&');
-    // console.log(queryParams)
+     console.log(queryParams)
+    //  let key = queryParams[queryParams.length - 1];
+   
+
+
+    //  key="startIndex="+page;
+    //    let a = key;
+    //     console.log(a)
+    //     queryParams[queryParams.length - 1] = a;
+    //     let b = queryParams.join('&');
+    //     let url = urlSplit[0] + '?' + b;
+    //     console.log(url)
+    //      getFiction(url);
+
      let key = queryParams[queryParams.length - 1].split('=');
-    // console.log(key)
+
     if (key[0] != 'startIndex') {
         let url = lastUrl + '&startIndex=' + page;
          getFiction(url);
     }
     else {
-        key[1] = page.toString();
+        console.log(key[1]);
+         key[1] = page.toString();
         console.log(key[1])
         let a = key.join('=');
         console.log(a)

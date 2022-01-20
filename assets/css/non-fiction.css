@@ -37,9 +37,9 @@ a {
 }
 
 
-/* =================header================= */
+/* =================header-top================= */
 
-.header{
+.header-top{
     height: 100vh;
     width: 100%;
       background-position: center;
@@ -337,7 +337,7 @@ box-shadow: 2px 16px 17px -1px rgba(38,37,37,0.55);
   margin: auto;
   animation: circle 6s linear infinite;
 }
-  .header {
+  .header-top {
     background-size: cover;
     font-size: 6.5px !important;
   }
