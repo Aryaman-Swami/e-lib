@@ -34,9 +34,10 @@ a {
   --secondary-color: #373b69;
 }
 
-/* =================header================= */
 
-.header {
+/* =================header-top================= */
+
+.header-top {
   height: 100vh;
   width: 100%;
   background-position: center;
@@ -97,44 +98,44 @@ a {
 .candle-1 {
   height: 140px;
   position: absolute;
-  top: 30px;
+  top: 130px;
   left: 15px;
 }
 
 .candle-2 {
   height: 140px;
   position: absolute;
-  top: 30px;
+  top: 130px;
   right: 150px;
 }
 .candle-3 {
   height: 140px;
   position: absolute;
-  top: 50px;
+  top: 150px;
   left: 50%;
 }
 .candle-4 {
   height: 140px;
   position: absolute;
-  top: 80px;
+  top: 180px;
   left: 45%;
 }
 .candle-5 {
   height: 140px;
   position: absolute;
-  top: 10px;
+  top: 110px;
   left: 30%;
 }
 .candle-6 {
   height: 140px;
   position: absolute;
-  top: 60px;
+  top: 160px;
   right: 30%;
 }
 .candle-7 {
   height: 140px;
   position: absolute;
-  top: 30px;
+  top: 130px;
   right: 25%;
 }
 
@@ -207,7 +208,7 @@ a {
   margin: auto;
   animation: circle 6s linear infinite;
 }
-  .header {
+  .header-top {
     background-size: cover;
     font-size: 6.5px !important;
   }

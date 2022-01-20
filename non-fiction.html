@@ -5,14 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/non-fiction.css">
    
 </head>
 <body>
-     <form id="form">
+     <!-- <form id="form">
         <input type="text" placeholder="Search" id="search" class="search">
-    </form> 
-    <section class="header">
+    </form>  -->
+    <header class="header">
+    
+        <div class="header-1">
+    
+            <a href="#" class="logo"> <i class="fas fa-book"></i>Joint Elibrary</a>
+    
+            <form action="" class="search-form" id="form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+    
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+    
+        </div>
+    
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+    
+                <div class="dropdown">
+                    <button class="dropbtn">featured</button>
+                    <div class="dropdown-content">
+                        <a href="fiction.html" onclick="fiction()">Fiction</a>
+                        <a href="non-fiction.html" onclick="nonfiction()">Non Fiction</a>
+                        <a href="drama.html" onclick="drama()">drama</a>
+                        <a href="comic.html" onclick="comic()">comic</a>
+                    </div>
+                </div>
+                <a href="#contact us">contact us</a>
+                <a href="#about us">about us</a>
+                <a href="#reviews">reviews</a>
+            </nav>
+        </div>
+    
+    </header>
+
+    <section class="header-top">
         
     
             <h1 class="head-texth1">Non-Fiction</h1>
@@ -43,5 +89,7 @@
 </div>
 
     <script src="assets/js/non-fiction.js"></script>
+        <script src="assets/js/nav.js"></script>
+
 </body>
 </html>

@@ -6,7 +6,7 @@ const form = document.getElementById("form");
 const API_URL = `https://www.googleapis.com/books/v1/volumes?&maxResults=15&key=${API_KEY}&startIndex=0`
 const Nonfiction_URL = `https://www.googleapis.com/books/v1/volumes?q=Nonfiction&maxResults=15&key=${API_KEY}&startIndex=0`
 const books = document.getElementById("books");
-const search = document.getElementById("search");
+const search = document.getElementById("search-box");
 
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");

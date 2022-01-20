@@ -6,7 +6,7 @@ const form = document.getElementById("form");
 const API_URL = `https://www.googleapis.com/books/v1/volumes?&maxResults=15&key=${API_KEY}&startIndex=0`
 const Drama_URL = `https://www.googleapis.com/books/v1/volumes?q=Drama&maxResults=15&key=${API_KEY}&startIndex=0`
 const books = document.getElementById("books");
-const search = document.getElementById("search");
+const search = document.getElementById("search-box");
 
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
@@ -72,7 +72,7 @@ function showBooks(data) {
          booksel.innerHTML = 
         
         `
-        <div class="left-card"><img src=${volumeInfo.imageLinks.thumbnail ? volumeInfo.imageLinks.thumbnail : "assets/img/cover.jpg"}></div>
+        <div class="left-card"><img src=${volumeInfo.imageLinks ? volumeInfo.imageLinks.thumbnail : "assets/img/cover.jpg"}></div>
         <div class="right-card">${volumeInfo.title.slice(0,30)} <br/><h5>Rating: ${volumeInfo.averageRating ? volumeInfo.averageRating+"/5" : 'Not Rated'}</h5>  <a href ='card.html?id=${books.id}' dataset-id=${books.id} class="btn">View More</a>  </div>
          
        
