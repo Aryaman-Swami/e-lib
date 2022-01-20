@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E - library </title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> 
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -41,20 +41,20 @@
 
     <div class="header-2">
         <nav class="navbar">
-            <a href="#home">home</a>
-      
-             <div class="dropdown">
-             <button class="dropbtn">featured</button> 
+            <a href="index.html">home</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">featured</button>
                 <div class="dropdown-content">
-                    <a href="#">Fiction</a>
-                    <a href="#">Non-Fiction</a>
-                    <a href="#">Drama</a>
-                      <a href="#">Comics</a>
+                    <a href="fiction.html" onclick="fiction()">Fiction</a>
+                    <a href="non-fiction.html" onclick="nonfiction()">Non Fiction</a>
+                    <a href="drama.html" onclick="drama()">drama</a><br>
+                    <a href="comic.html" onclick="comic()">comic</a>
                 </div>
-              </div>    
-            <a href="#contact us">contact us</a>
-            <a href="#about us">about us</a>
-            <a href="#reviews">reviews</a>
+            </div>
+            <a href="contactus.html">contact us</a>
+            <a href="aboutus.html">about us</a>
+            <a href="series.html">series</a>
         </nav>
     </div>
 
@@ -109,14 +109,14 @@
 
         <div class="swiper books-slider">
             <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide"><img src="image/book-1.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/book-2.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/book-3.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/book-4.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/book-5.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/book-6.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-1.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-2.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-3.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-4.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-5.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-6.png" alt=""></a>
             </div>
-            <img src="image/stand.png" class="stand" alt="">
+            <img src="stand.png" class="stand" alt="">
         </div>
 
     </div>
@@ -166,7 +166,7 @@
             <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
             <a href="#"> <i class="fas fa-phone"></i> +2322-3434-33 </a>
             <a href="#"> <i class="fas fa-envelope"></i> padaikrle@gmail.com </a>
-            <img src="image/worldmap.png" class="map" alt="">
+            <img src="worldmap.png" class="map" alt="">
         </div>
         
     </div>
@@ -187,9 +187,9 @@
 
 <!-- loader  -->
 
-<div class="loader-container">
-    <img src="image/loader-img.gif" alt="">
-</div>
+<!-- <div class="loader-container">
+    <img src="loader-img.gif" alt="">
+</div> -->
 
 
 
@@ -209,7 +209,9 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="script.js"></script>
+        <script src="assets/js/nav.js"></script>
+
 
 </body>
 </html>
