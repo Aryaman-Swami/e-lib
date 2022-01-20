@@ -56,7 +56,7 @@ body {
     text-align: center;
     top: 50px;
     font-weight:normal;
-    font-family: 'Rye', cursive;
+    font-family: 'Rye', cursive !important;
     font-size: 80px;
     padding-bottom: 50px;
 }
