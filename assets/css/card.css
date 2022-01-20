@@ -2,10 +2,12 @@
 @media only screen and (min-width: 0px) and (max-width: 500px) {}
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
+
 body {
     background-image:url(wood_background.png);
     background-repeat: repeat;
     background-size: cover;
+ 
     /*scroll-behavior: auto;
        background-position: center;*/
     /* height: 100%;
@@ -94,17 +96,19 @@ hr{
     border-width:thick;
     color: black;
     border-color: black;
-    width: 95vw;
+    width: 100vw;
+
     padding-right: 0px !important;
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
 #recommended{
     font-family: "Rye", cursive;
-    font-size: 3vw;
+    font-size: 5vw;
     color: black;
     border-radius: 3vw;
     padding-top: 2vw;
+    background-color: rgb(162, 152, 152);
     padding-left: 2vw;
 }
 
@@ -118,7 +122,9 @@ hr{
     text-align: center;
     font-family:'El Messiri';
     font-style: oblique;
-    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 0;
+    margin-right: 0;
+    grid-template-columns: 1.4fr 1.4fr 1.4fr;
 }
 
 .bookname{
